@@ -48,18 +48,23 @@
   <section>
     <div class="contact">
       <h2>問い合わせ</h2>
-      <form action="detail.html" method="get">
-        <label for="name"><strong>名前</strong></label>
-        <input type="text" name="name" id="name"><br>
-        <label for="email"><strong>メールアドレス</strong></label>
-        <input type="email" name="email" id="email"><br>
-        <select name="select">
-          <option value="広告掲載について">広告掲載について</option>
-        </select><br>
-        <label for="textarea"><strong>内容</strong></label>
-        <textarea name="contact" cols="30" rows="3" id="textarea"></textarea><br>
-        <input class="btn_delete" type="submit" value="削除">
-        <input class="btn_send" type="submit" value="送信">
+      <form class="contact_form" action="detail.html" method="get">
+        <dl>
+          <dt><label for="name"><strong>名前</strong></label></dt>
+          <dd><input type="text" name="name" id="name"></dd><br>
+          <dt><label for="email"><strong>メールアドレス</strong></label></dt>
+          <dd><input type="text" name="email" id="email"></dd><br>
+          <dt><label for="case"><strong>用件</strong></label></dt>
+          <dd><select name="select">
+            <option value="広告掲載について" id="case">広告掲載について</option>
+          </select></dd><br>
+          <dt><label for="textarea"><strong>内容</strong></label></dt>
+          <dd><textarea name="contact" cols="30" rows="8" id="textarea"></textarea></dd>
+          </dl><br><br>
+        <div class="btn">
+          <input class="btn_delete" type="submit" value="削除">
+          <input class="btn_send" type="submit" value="送信">
+        </div>
       </form>
     </div>
   </section>
